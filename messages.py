@@ -1,6 +1,6 @@
 RU_TEXTS = {
     "start_message": (
-        "<b>Добро пожаловать в NEXUS – надежный P2P-гарант</b>\n\n"
+        "<b>Добро пожаловать в TON Dealer – надежный P2P-гарант</b>\n\n"
         "<b>💼 Покупайте и продавайте всё, что угодно – безопасно!</b>\n"
         "От Telegram-подарков и NFT до токенов и фиата – сделки проходят легко и без риска.\n\n"
         "🔹 Удобное управление кошельками\n"
@@ -195,7 +195,7 @@ RU_TEXTS = {
 
 EN_TEXTS = {
     "start_message": (
-        "<b>Welcome to NEXUS – a reliable P2P guarantor</b>\n\n"
+        "<b>Welcome to TON Ddaler – a reliable P2P guarantor</b>\n\n"
         "<b>💼 Buy and sell anything – safely!</b>\n"
         "From Telegram gifts and NFTs to tokens and fiat – transactions are easy and risk-free.\n\n"
         "🔹 Convenient wallet management\n"
@@ -414,4 +414,5 @@ def get_text(lang: str, key: str, **kwargs) -> str:
         return message_template
     except Exception as e:
         print(f"Error formatting text for key '{key}': {str(e)}")
+
         return key
