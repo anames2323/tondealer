@@ -195,7 +195,7 @@ RU_TEXTS = {
 
 EN_TEXTS = {
     "start_message": (
-        "<b>Welcome to TON Ddaler – a reliable P2P guarantor</b>\n\n"
+        "<b>Welcome to TON Dealer – a reliable P2P guarantor</b>\n\n"
         "<b>💼 Buy and sell anything – safely!</b>\n"
         "From Telegram gifts and NFTs to tokens and fiat – transactions are easy and risk-free.\n\n"
         "🔹 Convenient wallet management\n"
@@ -416,3 +416,4 @@ def get_text(lang: str, key: str, **kwargs) -> str:
         print(f"Error formatting text for key '{key}': {str(e)}")
 
         return key
+
