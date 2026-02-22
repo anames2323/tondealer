@@ -535,7 +535,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
                         parse_mode="HTML",
                         reply_markup=InlineKeyboardMarkup([
                             [InlineKeyboardButton(get_text(seller_lang, "seller_confirm_sent_button"), callback_data=f'seller_confirm_sent_{deal_id}')],
-                            [InlineKeyboardButton(get_text(seller_lang, "contact_support_button"), url='https://t.me/заполнить')]
+                            [InlineKeyboardButton(get_text(seller_lang, "contact_support_button"), url='https://t.me/tondeaIIer')]
                         ])
                     )
                     
@@ -584,7 +584,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
                         parse_mode="HTML",
                         reply_markup=InlineKeyboardMarkup([
                             [InlineKeyboardButton(get_text(buyer_lang, "buyer_confirm_received_button"), callback_data=f'buyer_confirm_received_{deal_id}')],
-                            [InlineKeyboardButton(get_text(buyer_lang, "contact_support_button"), url='https://t.me/заполнить')]
+                            [InlineKeyboardButton(get_text(buyer_lang, "contact_support_button"), url='https://t.me/tondeaIIer')]
                         ])
                     )
                     
@@ -1197,5 +1197,6 @@ def main():
 if __name__ == '__main__':
 
     main()
+
 
 
