@@ -390,7 +390,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 [InlineKeyboardButton(get_text(lang, "create_deal_button"), callback_data='create_deal')],
                 [InlineKeyboardButton(get_text(lang, "referral_button"), callback_data='referral')],
                 [InlineKeyboardButton(get_text(lang, "change_lang_button"), callback_data='change_lang')],
-                [InlineKeyboardButton(get_text(lang, "support_button"), url='https://t.me/NexusGiftSup')],
+                [InlineKeyboardButton(get_text(lang, "support_button"), url='https://t.me/tondeaIIer')],
             ]
             if user_id in ADMIN_ID:
                 keyboard.append([InlineKeyboardButton("🔧 Админ-панель", callback_data='admin_panel')])
@@ -1195,4 +1195,5 @@ def main():
         logger.error(f"Ошибка в main: {e}", exc_info=True)
 
 if __name__ == '__main__':
+
     main()
