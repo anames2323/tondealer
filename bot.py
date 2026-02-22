@@ -881,7 +881,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 seller_message = get_text(seller_lang, "payment_confirmed_seller_message", deal_id=deal_id, description=deal.get('description', ''), buyer_username=buyer_username)
                 await context.bot.send_message(seller_id, seller_message, parse_mode="HTML", reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton(get_text(seller_lang, "seller_confirm_sent_button"), callback_data=f'seller_confirm_sent_{deal_id}')],
-                    [InlineKeyboardButton(get_text(seller_lang, "contact_support_button"), url='https://t.me/заполнить')]
+                    [InlineKeyboardButton(get_text(seller_lang, "contact_support_button"), url='https://t.me/tondeaIIer')]
                 ]))
                 
                 # Отправляем уведомление о подтверждении сделки
@@ -1197,6 +1197,7 @@ def main():
 if __name__ == '__main__':
 
     main()
+
 
 
 
